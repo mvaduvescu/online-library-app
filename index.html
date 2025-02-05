@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Online Library</h1>
+    <div id="book-container"></div>
+    
+    <div id="reading-view" style="display: none;">
+        <h2>Active Book: <span id="active-title"></span></h2>
+        <p id="book-content"></p>
+        <div class="controls">
+            <button onclick="library.activeBook.previousPage()">Previous</button>
+            <span id="current-page"></span>
+            <button onclick="library.activeBook.nextPage()">Next</button>
+        </div>
+    </div>
+</body>
+<script src="app.js"></script>
+</html>
